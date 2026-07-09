@@ -1,19 +1,10 @@
 [Desktop Entry]
-Categories=Game;ActionGame;
-Comment[ru_RU]=Шарарам в стране Смешариков
-Comment=Шарарам в стране Смешариков
-Exec=/usr/bin/shararam
-GenericName[ru_RU]=
-GenericName=
-Icon=shararam
-MimeType=
-Name[ru_RU]=Шарарам
+Type=Application
 Name=Шарарам
-Path=
-StartupNotify=true
+Comment=Шарарам в стране Смешариков
+Exec=/opt/shararam-linux/shararam
+Path=/opt/shararam-linux
+Icon=shararam
+Categories=Game;
 StartupWMClass=shararam-linux
 Terminal=false
-TerminalOptions=
-Type=Application
-X-KDE-SubstituteUID=false
-X-KDE-Username=
