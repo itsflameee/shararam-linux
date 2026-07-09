@@ -18,3 +18,40 @@ const SPOOF_USERAGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 Эта строчка объявляет переменную SPOOF_USERAGENT, в которой, как вы видите, тот самый User-Agent, который так ждёт сервер Шарарама. Позднее эта переменная используется для подмены в каждом окне, что приводит к тому, что Шарарам любезно выплёвывает нам страницу с флеш игрой.
 
 Так как мы теперь получаем флеш-игру, а не Unity-огрызок - нам необходим Adobe Flash Player, который как раз таки и взят из проекта Clean Flash.
+
+## Установка
+
+### AppImage - любой дистрибутив
+Самый простой способ поиграть прямо сейчас - скачать [shararam-linux.AppImage](https://github.com/itsflameee/shararam-linux/releases/download/v2.0.6/shararam-linux.AppImage) и запустить. Этот способ не требует установки, и работает как портативная программа. Чтобы удалить Шарарам - нам необходимо просто удалить .AppImage
+
+### AUR - Arch Linux
+Пока что AUR-пакета на Arch Linux нет, позднее если не забуду добавлю.
+
+### Ручная установка - любой дистрибутив
+Для ручной установки выполните следующие команды:
+
+```
+# скачиваем .tar.gz
+wget https://github.com/itsflameee/shararam-linux/releases/download/v2.0.6/shararam-linux.tar.gz && \
+# создаём директорию для shararam-linux
+sudo mkdir -p /opt/shararam-linux && \
+# распаковываем .tar.gz
+sudo tar -xzf shararam-linux.tar.gz -C /opt/shararam-linux/ && \
+# размещаем иконку в системе
+sudo cp /opt/shararam-linux/shararam.png /usr/share/pixmaps/shararam.png && \
+# размещаем ярлык в меню приложений
+sudo cp /opt/shararam-linux/shararam.desktop /usr/share/applications/shararam.desktop && \
+# разрешаем запуск бинарника
+sudo chmod +x /opt/shararam-linux/shararam
+```
+
+### Удаление после ручной установки - любой дистрибутив
+
+```
+# удаляем директорию игры
+sudo rm -rf /opt/shararam-linux && \
+# удаляем иконку
+sudo rm /usr/share/pixmaps/shararam.png && \
+# удаляем ярлык
+sudo rm /usr/share/applications/shararam.desktop
+```
