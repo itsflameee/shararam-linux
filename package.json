@@ -1,0 +1,11 @@
+{
+  "name": "shararam-linux",
+  "version": "2.0.6",
+  "description": "Оригинальный Шарарам, портированный под Linux на основе Electron и Clean Flash",
+  "main": "main.js",
+  "author": "its.flame",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron ."
+  }
+}
