@@ -25,7 +25,10 @@ const SPOOF_USERAGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 Самый простой способ поиграть прямо сейчас - скачать [shararam-linux.AppImage](https://github.com/itsflameee/shararam-linux/releases/download/v2.0.6/shararam-linux.AppImage) и запустить. Этот способ не требует установки, и работает как портативная программа. Чтобы удалить Шарарам - нам необходимо просто удалить .AppImage
 
 ### AUR - Arch Linux
-Пока что AUR-пакета на Arch Linux нет, позднее если не забуду добавлю.
+
+```
+yay -S shararam-linux-bin
+```
 
 ### Ручная установка - любой дистрибутив
 Для ручной установки выполните следующие команды:
